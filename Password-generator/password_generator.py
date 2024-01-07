@@ -54,7 +54,7 @@ digits_var.set(True)
 special_chars_var = tk.BooleanVar()
 special_chars_checkbox = ttk.Checkbutton(check_frame, text="Include Special Characters", variable=special_chars_var)
 special_chars_checkbox.pack(fill="x",pady=5)
-special_chars_var.set(True)
+special_chars_var.set(False)
 
 generate_button = ttk.Button(window, text="Generate", command=generate_password_button_clicked)
 generate_button.pack(pady=10)

@@ -26,31 +26,31 @@ window.resizable(0,0)
 window.config(bg="#282829")
 
 # ---------- The Images -----------
-rock_img = ImageTk.PhotoImage(Image.open("./Images/rock.png").resize((70, 70)))
-paper_img = ImageTk.PhotoImage(Image.open("./Images/paper.png").resize((70, 70)))
-scissor_img = ImageTk.PhotoImage(Image.open("./Images/scissor.png").resize((70, 70)))
+rock_img = ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/rock.png").resize((70, 70)))
+paper_img = ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/paper.png").resize((70, 70)))
+scissor_img = ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/scissor.png").resize((70, 70)))
 
-reverse_rock_img = ImageTk.PhotoImage(Image.open("./Images/rock.png").transpose(Image.FLIP_LEFT_RIGHT).resize((70, 70)))
-reverse_paper_img = ImageTk.PhotoImage(Image.open("./Images/paper.png").transpose(Image.FLIP_LEFT_RIGHT).resize((70, 70)))
-reverse_scissor_img = ImageTk.PhotoImage(Image.open("./Images/scissor.png").transpose(Image.FLIP_LEFT_RIGHT).resize((70, 70)))
+reverse_rock_img = ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/rock.png").transpose(Image.FLIP_LEFT_RIGHT).resize((70, 70)))
+reverse_paper_img = ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/paper.png").transpose(Image.FLIP_LEFT_RIGHT).resize((70, 70)))
+reverse_scissor_img = ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/scissor.png").transpose(Image.FLIP_LEFT_RIGHT).resize((70, 70)))
 
-win_img=ImageTk.PhotoImage(Image.open("./Images/win.png").resize((150,150)))
-lose_img=ImageTk.PhotoImage(Image.open("./Images/lose.png").resize((150,150)))
-tie_img=ImageTk.PhotoImage(Image.open("./Images/tie.png").resize((150,150)))
-play_img=ImageTk.PhotoImage(Image.open("./Images/start.png").resize((150,150)))
+win_img=ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/win.png").resize((150,150)))
+lose_img=ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/lose.png").resize((150,150)))
+tie_img=ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/tie.png").resize((150,150)))
+play_img=ImageTk.PhotoImage(Image.open("./Rock-Scissor-Paper-Game/Images/start.png").resize((150,150)))
 
 # ------------ Voices ------------------#
 pygame.mixer.init() # initialise the pygame 
 def winVoice():
-	pygame.mixer.music.load("./Sounds/winvoice.mp3")
+	pygame.mixer.music.load("./Rock-Scissor-Paper-Game/Sounds/winvoice.mp3")
 	pygame.mixer.music.play(loops=0)
 
 def loseVoice():
-	pygame.mixer.music.load("./sounds/losevoice.mp3")
+	pygame.mixer.music.load("./Rock-Scissor-Paper-Game/Sounds/losevoice.mp3")
 	pygame.mixer.music.play(loops=0)
 
 def tieVoice():
-	pygame.mixer.music.load("./sounds/draw.mp3")
+	pygame.mixer.music.load("./Rock-Scissor-Paper-Game/Sounds/draw.mp3")
 	pygame.mixer.music.play(loops=0)
 
 

@@ -101,7 +101,7 @@ updTask_btn = tk.Button(
 )
 updTask_btn.pack(fill=tk.BOTH, expand=True, side=tk.LEFT)
 
-file1 = open("Database.txt", "r")
+file1 = open("./ToDo-list/Database.txt", "r")
 while True:
     task = file1.readline()
     if not task:break
@@ -109,7 +109,7 @@ while True:
 file1.close()
 
 def callback():
-    f = open("Database.txt","w")
+    f = open("./ToDo-list/Database.txt","w")
     tasks = list(lb.get(0,tk.END))
     for task in tasks:
         task = task.strip()
