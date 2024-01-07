@@ -4,7 +4,7 @@ from tkinter import messagebox
 window = tk.Tk()
 # size and (x, y) points
 window.geometry('500x450+600+200')
-window.title('First GUI-bases program')
+window.title('Todo list ')
 # config use for background color
 window.config(bg='#223441')
 # resizing is off
